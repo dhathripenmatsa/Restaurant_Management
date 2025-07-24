@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Offers</h2>
+
+<form method="post" class="form-container">
+  <input type="text" name="offer" placeholder="Enter Offer Details" required>
+  <button type="submit" class="add-button">Add Offer</button>
+</form>
+
+<div class="item-list">
+  {% for o in offers %}
+    <div class="item-card">
+      <span>{{ o[1] }}</span>
+      <a href="/delete_offer/{{ o[0] }}" class="delete-btn">Delete</a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
+

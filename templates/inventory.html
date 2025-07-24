@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Inventory</h2>
+
+<form method="post" class="form-container">
+  <input type="text" name="item" placeholder="Item Name" required>
+  <input type="number" name="quantity" placeholder="Quantity" required>
+  <button type="submit" class="add-button">Add Inventory</button>
+</form>
+
+<ul class="item-list">
+  {% for i in inventory %}
+    <li class="item-card">
+      {{ i[1] }} - Qty: {{ i[2] }}
+      <a href="/delete_inventory/{{ i[0] }}" class="delete-btn">Delete</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 2px solid #ffd700;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+nav a:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+/* Improve sample item display */
+.sample-item {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 18px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+/* Improve forms for adding items */
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: #ffd700;
+}
+
+/* Stylish submit button */
+form input[type="submit"], button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover, button:hover {
+    background-color: #e6c200;
+}
+.delete-link {
+    color: #ff4d4d;
+    font-size: 13px;              /* 👈 Smaller font size */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 8px;             /* Slightly smaller padding */
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.delete-link:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+.sample-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.sample-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.sample-item strong {
+    font-size: 20px;
+    color: #e67e22;
+}
+.form-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container input,
+.form-container button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sample-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.sample-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.sample-item strong {
+    font-size: 20px;
+    color: #e67e22;
+}
+
+.delete-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #ff4d4d;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.form-container input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+}
+
+.add-button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #ff8c00;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    width: 60%;
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.delete-btn {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}

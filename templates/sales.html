@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Sales</h2>
+
+<form method="post" class="form-container">
+  <input type="text" name="dishname" placeholder="Dish Name" required>
+  <input type="number" name="quantity" placeholder="Quantity" required>
+  <button type="submit" class="add-button">Record Sale</button>
+</form>
+
+<div class="item-list">
+  {% for sale in sales %}
+    <div class="item-card">
+      <span>{{ sale[1] }} - Qty: {{ sale[2] }} - ₹{{ sale[3] }}</span>
+      <a href="/delete_sales/{{ sale[0] }}" class="delete-btn">Delete</a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

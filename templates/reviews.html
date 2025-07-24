@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Reviews</h2>
+
+<form method="post" class="form-container">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="text" name="comment" placeholder="Comment" required>
+  <button type="submit" class="add-button">Add Review</button>
+</form>
+
+<div class="item-list">
+  {% for r in reviews %}
+    <div class="item-card">
+      <span><strong>{{ r[1] }}</strong>: {{ r[2] }}</span>
+      <a href="/delete_review/{{ r[0] }}" class="delete-btn">Delete</a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
