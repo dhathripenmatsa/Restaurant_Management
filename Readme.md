@@ -48,8 +48,7 @@ restaurant-management/
 │
 ├── static/
 │   ├── style.css
-│   └── banner.png
-│
+|
 ├── app.py             # Main Flask app
 ├── create_db.py       # Script to generate sample DB
 ├── requirements.txt   # All required packages
