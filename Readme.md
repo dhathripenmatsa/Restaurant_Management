@@ -54,7 +54,7 @@ restaurant-management/
 ├── create_db.py       # Script to generate sample DB
 ├── requirements.txt   # All required packages
 └── Procfile
----        
+```      
 
 ---
 
