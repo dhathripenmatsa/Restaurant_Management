@@ -53,7 +53,8 @@ restaurant-management/
 ├── app.py             # Main Flask app
 ├── create_db.py       # Script to generate sample DB
 ├── requirements.txt   # All required packages
-└── Procfile           
+└── Procfile
+---        
 
 ---
 
